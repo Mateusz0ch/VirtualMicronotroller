@@ -1,6 +1,8 @@
 #ifndef TEMPLATE_HPP
 #define TEMPLATE_HPP
 
+#include <iostream>
+
 enum PORT
 {
     PORTA,
@@ -30,5 +32,6 @@ class Microcontroller
 public:
     bool getState(PORT, BIT);
     bool isOutput(PORT, BIT);
+    void displayPorts();
 };
 #endif

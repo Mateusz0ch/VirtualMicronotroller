@@ -22,3 +22,18 @@ bool Microcontroller::isOutput(PORT x, BIT b)
     }
     return false;
 }
+void Microcontroller::displayPorts()
+{
+    std::cout << "PORTA: ";
+    for (int i = 128; i >= 1; i /= 2)
+    {
+        std::cout << (bool)(Conf.PORTA & i) << " ";
+    };
+    std::cout << std::endl;
+    std::cout << "PORTB: ";
+    for (int i = 128; i >= 1; i /= 2)
+    {
+        std::cout << (bool)(Conf.PORTB & i) << " ";
+    }
+    std::cout << std::endl;
+}

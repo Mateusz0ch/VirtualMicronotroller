@@ -10,4 +10,5 @@ int main()
         std::cout << "OUTPUT" << std::endl;
     else
         std::cout << "INPUT";
+    m.displayPorts();
 }
